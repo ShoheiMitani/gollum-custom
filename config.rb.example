@@ -1,0 +1,39 @@
+Gollum::Page.send :remove_const, :FORMAT_NAMES if defined? Gollum::Page::FORMAT_NAMES
+
+## Omni Auth
+require 'omnigollum'
+require 'omniauth/strategies/github'
+
+wiki_options = {
+  :live_preview => false,
+  :allow_uploads => true,
+  :per_page_uploads => true,
+  :allow_editing => true,
+  :css => true,
+  :js => false,
+  :mathjax => false,
+  :h1_title => false,
+  # Custom template files directory
+  :template_dir => 'custom-template'
+}
+
+Precious::App.set(:wiki_options, wiki_options)
+
+options = {
+  # OmniAuth::Builder block is passed as a proc
+  :providers => Proc.new do
+    # Found https://github.com/settings/applications/
+    provider :github, ENV['GITHUB_OAUTH_CLIENT_ID'], ENV['GITHUB_OAUTH_SECRET']
+  end,
+  :dummy_auth => false,
+
+  # List the URL of the page if you wants to demand the certification from the specific page
+  # :protected_routes => ['/private*'],
+
+  # Add authorized users who you want to publish gollum site
+  :authorized_users => ["sample@example.com"],
+}
+
+## :omnigollum options *must* be set before the Omnigollum extension is registered
+Precious::App.set(:omnigollum, options)
+Precious::App.register Omnigollum::Sinatra
