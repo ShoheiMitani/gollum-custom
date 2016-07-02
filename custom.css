@@ -1,0 +1,216 @@
+
+a:link{
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover, a:visited  {
+  color: #685987;
+  text-decoration: underline;
+}
+/* Overide max width */
+@media all and (min-width: 940px) {
+    #wiki-wrapper {
+        max-width: 1100px;
+        padding-left:30px;
+        padding-right:30px;
+    }
+    #head {
+        margin-bottom: 30px;
+        padding-bottom: 0;
+    }
+    #head h1 {
+        padding-bottom: 0px;
+        font-size: 2.7em;
+    }
+    #head ul.actions {
+        padding-top: 15px;
+    }
+}
+
+@media all and (min-width: 940px) {
+  .markdown-body {
+    padding: 10px;
+  }
+}
+
+.minibutton a, #gollum-dialog-dialog a.minibutton, #gollum-dialog-dialog a.minibutton:visited {
+    border: none;
+    background: #2dbe60;
+    color: white;
+    text-shadow: none;
+    font-family: Montserrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.6em 1em 0.4em;
+    border-radius: 2px;
+}
+.minibutton a:hover, #search-submit:hover, #gollum-dialog-dialog a.minibutton:hover,
+a#gollum-editor-preview.minibutton:hover {
+    background: #2DBEA9!important;
+    text-shadow: none;
+}
+input#gollum-editor-submit:hover  {
+    background: #2DBEA9!important;
+    text-shadow: none;
+}
+span,
+a.buttom{
+    background-color: white!important;
+    opacity: 1.0;
+}
+#gollum-editor input#gollum-editor-submit {
+  border: 1px solid #2dbe60!important;
+  color: white;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  text-shadow: none;
+  font-family: Montserrat;
+  background: #2dbe60;
+  text-transform: uppercase;
+}
+#gollum-editor{
+    background-color: white;
+    border: none;
+}
+.webkit #gollum-editor input#gollum-editor-submit {
+  padding: 0.3em 1em;
+}
+input#input#gollum-editor-submit:hover {
+    background: #fff;
+    color: #333;
+    border: solid 1px #333;
+    transition: all 0.5s;
+}
+#gollum-editor a.minibutton,
+#gollum-editor a.minibutton:visited {
+  border: 1px solid #2dbe60;
+  color: white;
+  display: block;
+  font-size: 1em;
+  line-height: 1.2em;
+  margin: 0 0 0 0.8em;
+  padding: 0.5em 1em;
+  text-shadow: none;
+  font-family: Montserrat;
+  font-weight: bold!important;
+  background: #2dbe60;
+  text-transform: uppercase;
+}
+#wiki-header #header-content,
+#wiki-footer #footer-content {
+  background-color: white;
+  border: 2px solid #f7f7f7;
+  padding: 0em;
+  border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+}
+#wiki-sidebar {
+    font-size: 1rem;
+    padding: 15px!important;
+}
+div#sidebar-content.markdown-body{
+    padding: 0em!important;
+}
+#wiki-toc-main, #wiki-sidebar {
+    border-radius: 0;
+    border: white;
+    border-left: 2px solid #2dbe60;
+    background: white;
+}
+#wiki-toc-main:hover, #wiki-sidebar:hover {
+    background: #FCFCFC;
+}
+h1 {
+    font-family: 'FiraSans';
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 2.0em;
+}
+.markdown-body h1 {
+    font-family: 'FiraSans';
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 2.0em;
+    border-bottom: 1px solid #ddd;
+    border-left: 5px solid #39B790;
+    padding: 15px;
+}
+.markdown-body {
+    font-size: 1.38em;
+    line-height: 1.4;
+}
+.markdown-body strong {
+    font-family: 'FiraSans';
+}
+.markdown-body h2, h2 {
+    font-size: 1.6em; /*28px*/
+    color: #333;
+    font-family: 'FiraSans';
+    font-weight: bold;
+    border-bottom: 1px solid #ddd!important;
+    border: none;
+}
+.markdown-body blockquote {
+    border-left: 6px solid #67c9ec;
+    padding-left: 15px;
+    font-style: italic;
+}
+.markdown-body pre {
+    border: 1px solid #E1E7E8;
+    background: #FCFCFC;
+    padding: 15px;
+}
+.toc {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 3px;
+}
+div#header-content.markdonw-body{
+    background: black;
+}
+#cust-header-wrapper {
+
+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#2dbe60', endColorstr = '#fffbe0');
+/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#2dbe60', endColorstr = '#fffbe0')";
+/*Element must have a height (not auto)*/
+/*All filters must be placed together*/
+background-image: -moz-linear-gradient(left, #2dbe60, #fffbe0);
+background-image: -ms-linear-gradient(left, #2dbe60, #fffbe0);
+background-image: -o-linear-gradient(left, #2dbe60, #fffbe0);
+background-image: -webkit-gradient(linear, center left, center right, from(#2dbe60), to(#fffbe0));
+background-image: -webkit-linear-gradient(left, #2dbe60, #fffbe0);
+background-image: linear-gradient(left, #2dbe60, #fffbe0);
+/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
+
+    height: 50px;
+    0px;
+}
+#cust-header {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#cust-header h1{
+    margin-left: 10px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    font-family: 'arial narrow';
+}
+#header-icon {
+    width: 32px;
+    height: 32px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display:inline;
+}
