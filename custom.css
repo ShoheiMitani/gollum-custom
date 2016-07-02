@@ -173,23 +173,20 @@ div#header-content.markdonw-body{
     background: black;
 }
 #cust-header-wrapper {
-
-
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#2dbe60', endColorstr = '#fffbe0');
-/*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
-/*Element must have a height (not auto)*/
-/*All filters must be placed together*/
--ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#2dbe60', endColorstr = '#fffbe0')";
-/*Element must have a height (not auto)*/
-/*All filters must be placed together*/
-background-image: -moz-linear-gradient(left, #2dbe60, #fffbe0);
-background-image: -ms-linear-gradient(left, #2dbe60, #fffbe0);
-background-image: -o-linear-gradient(left, #2dbe60, #fffbe0);
-background-image: -webkit-gradient(linear, center left, center right, from(#2dbe60), to(#fffbe0));
-background-image: -webkit-linear-gradient(left, #2dbe60, #fffbe0);
-background-image: linear-gradient(left, #2dbe60, #fffbe0);
-/*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
-
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#2dbe60', endColorstr = '#fffbe0');
+    /*INNER ELEMENTS MUST NOT BREAK THIS ELEMENTS BOUNDARIES*/
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#2dbe60', endColorstr = '#fffbe0')";
+    /*Element must have a height (not auto)*/
+    /*All filters must be placed together*/
+    background-image: -moz-linear-gradient(left, #2dbe60, #fffbe0);
+    background-image: -ms-linear-gradient(left, #2dbe60, #fffbe0);
+    background-image: -o-linear-gradient(left, #2dbe60, #fffbe0);
+    background-image: -webkit-gradient(linear, center left, center right, from(#2dbe60), to(#fffbe0));
+    background-image: -webkit-linear-gradient(left, #2dbe60, #fffbe0);
+    background-image: linear-gradient(left, #2dbe60, #fffbe0);
+    /*--IE9 DOES NOT SUPPORT CSS3 GRADIENT BACKGROUNDS--*/
     height: 50px;
     0px;
 }
@@ -205,12 +202,4 @@ background-image: linear-gradient(left, #2dbe60, #fffbe0);
     font-size: 30px;
     color: white;
     font-family: 'arial narrow';
-}
-#header-icon {
-    width: 32px;
-    height: 32px;
-    margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    display:inline;
 }
